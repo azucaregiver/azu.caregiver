@@ -1,0 +1,354 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/fr/Header.astro";
+import Hero from "../../components/fr/Hero.astro";
+import WhyAzu from "../../components/fr/WhyAzu.astro";
+import Services from "../../components/fr/Services.astro";
+import Approach from "../../components/fr/Approach.astro";
+import AboutAzu from "../../components/fr/AboutAzu.astro";
+import KindWords from "../../components/fr/KindWords.astro";
+import FAQ from "../../components/fr/FAQ.astro";
+import Footer from "../../components/fr/Footer.astro";
+---
+
+<Layout
+  title="Azu, your Caregiver | Private Childcare in Tokyo & Kanagawa"
+  description="Thoughtful private childcare in Tokyo and Kanagawa for local families, international residents, and families visiting Japan."
+>
+  <div id="top">
+    <Header />
+  </div>
+
+  <main>
+    <Hero />
+    <WhyAzu />
+    <Services />
+    <Approach />
+    <AboutAzu />
+    <FAQ />
+    <KindWords />
+
+    <!-- Contact -->
+    <section
+      id="contact"
+      class="bg-[#F8EED9] px-5 py-16
+      sm:px-6 sm:py-20
+      md:py-28"
+    >
+      <div class="mx-auto max-w-7xl">
+
+        <!-- Heading -->
+        <div
+          class="grid gap-6
+          sm:gap-8
+          lg:grid-cols-[0.8fr_2fr] lg:items-start lg:gap-10"
+        >
+          <div class="pt-0 lg:pt-2">
+            <p
+              class="text-[10px] uppercase tracking-[0.22em] text-[#C96F3D]
+              sm:text-xs sm:tracking-[0.28em]"
+            >
+              Contact
+            </p>
+
+            <div
+              class="mt-4 h-px w-10 bg-[#F2A06F]
+              sm:mt-6 sm:w-14"
+            ></div>
+          </div>
+
+          <div>
+            <h2
+              class="font-serif text-[2.5rem] leading-[1.05] tracking-[-0.025em] text-[#2B211C]
+              sm:text-5xl sm:leading-tight
+              md:text-6xl"
+            >
+              J'ai hâte d'échanger avec vous !
+            </h2>
+
+            <p
+              class="mt-5 max-w-2xl text-sm leading-7 text-[#68584D]
+              sm:mt-6 sm:text-base sm:leading-8
+              md:mt-7 md:text-lg"
+            >
+              Vous vous demandez si Azu pourrait convenir à votre famille ? 
+              Échangeons lors d'un appel vidéo !
+            </p>
+          </div>
+        </div>
+
+
+        <!-- Contact options -->
+        <div
+          class="mt-10 grid gap-5
+          sm:mt-12 sm:gap-6
+          md:grid-cols-2 md:gap-6
+          lg:mt-16"
+        >
+
+          <!-- LINE -->
+          <article
+            class="relative flex min-h-[430px] flex-col justify-between overflow-hidden bg-[#FFFDF8] px-6 py-7
+            sm:min-h-[460px] sm:px-7 sm:py-8
+            md:min-h-[500px] md:px-10 md:py-10"
+            style="border-radius: 12px 12px 80px 12px;"
+          >
+            <div>
+              <div class="flex items-start justify-between gap-4">
+                <p
+                  class="max-w-[80%] text-[10px] font-medium uppercase tracking-[0.2em] text-[#C96F3D]
+                  sm:text-xs sm:tracking-[0.25em]"
+                >
+                  Pour les familles résidant au Japon
+                </p>
+
+                <span
+                  class="shrink-0 text-[10px] tracking-[0.15em] text-[#C96F3D]
+                  sm:text-xs"
+                >
+                  01
+                </span>
+              </div>
+
+              <h3
+                class="mt-7 font-serif text-[2.25rem] leading-[1.05] text-[#2B211C]
+                sm:mt-8 sm:text-4xl
+                md:mt-10 md:text-5xl"
+              >
+                Contact me
+                <br />
+                <span class="italic">on LINE.</span>
+              </h3>
+
+              <p
+                class="mt-5 max-w-md text-xs leading-6 text-[#68584D]
+                sm:mt-6 sm:text-sm sm:leading-7"
+              >
+                Si vous utilisez LINE, n'hésitez pas à m'ajouter et à m'envoyer directement un message.
+              </p>
+            </div>
+
+
+            <!-- QR code and button -->
+            <div
+              class="mt-8 flex flex-col items-center gap-6
+              sm:mt-9 sm:flex-row sm:items-end sm:justify-between sm:gap-7
+              md:mt-10"
+            >
+
+              <!-- Actual LINE QR code -->
+              <div
+                class="flex h-32 w-32 shrink-0 items-center justify-center border border-[#E7D6C7] bg-[#FFF8E7] p-2.5
+                sm:h-36 sm:w-36 sm:p-3
+                md:h-40 md:w-40"
+              >
+                <img
+                  src="/images/line-qr.jpg"
+                  alt="Azu's LINE QR code"
+                  class="block h-full w-full object-contain"
+                />
+              </div>
+
+
+              <div
+                class="flex flex-col items-center
+                sm:items-end"
+              >
+                <p
+                  class="mb-3 text-center text-[11px] leading-5 text-[#68584D]
+                  sm:text-right sm:text-xs"
+                >
+                  Scannez le QR code<br />
+                  pour m'ajouter sur LINE.
+                </p>
+
+                <a
+                  href="#"
+                  class="inline-flex items-center justify-center border border-[#C96F3D] px-5 py-3 text-xs font-medium tracking-wide text-[#C96F3D] transition-colors hover:bg-[#C96F3D] hover:text-[#FFFDF8]
+                  sm:px-6 sm:py-3.5 sm:text-sm"
+                >
+                  Ajoutez-moi
+                  <span class="ml-3">→</span>
+                </a>
+              </div>
+
+            </div>
+          </article>
+
+
+          <!-- EMAIL -->
+          <article
+            class="relative flex min-h-[430px] flex-col justify-between overflow-hidden bg-[#FFFDF8] px-6 py-7
+            sm:min-h-[460px] sm:px-7 sm:py-8
+            md:min-h-[500px] md:px-10 md:py-10"
+            style="border-radius: 12px 12px 80px 12px;"
+          >
+            <div>
+              <div class="flex items-start justify-between gap-4">
+                <p
+                  class="max-w-[82%] text-[10px] font-medium uppercase tracking-[0.18em] text-[#C96F3D]
+                  sm:text-xs sm:tracking-[0.25em]"
+                >
+                  Pour les familles internationales &amp; et aux voyageurs               </p>
+
+                <span
+                  class="shrink-0 text-[10px] tracking-[0.15em] text-[#C96F3D]
+                  sm:text-xs"
+                >
+                  02
+                </span>
+              </div>
+
+              <h3
+                class="mt-7 font-serif text-[2.25rem] leading-[1.05] text-[#2B211C]
+                sm:mt-8 sm:text-4xl
+                md:mt-10 md:text-5xl"
+              >
+                Préférence pour
+                <br />
+                <span class="italic">l'e-mail?</span>
+              </h3>
+
+              <p
+                class="mt-5 max-w-md text-xs leading-6 text-[#68584D]
+                sm:mt-6 sm:text-sm sm:leading-7"
+              >
+                Les e-mail fonctionnent également, en particulier si vous êtes de passage à Tokyo ou si vous me contactez depuis l'étranger.
+              </p>
+            </div>
+
+
+            <!-- Email -->
+            <div class="mt-8 sm:mt-9 md:mt-10">
+              <p
+                class="text-[10px] font-medium uppercase tracking-[0.2em] text-[#C96F3D]"
+              >
+                Email
+              </p>
+
+              <a
+                href="mailto:azu.caregiver@gmail.com"
+                class="mt-2 block break-all font-serif text-lg leading-7 text-[#2B211C] transition-colors hover:text-[#C96F3D]
+                sm:mt-3 sm:text-xl
+                md:text-2xl"
+              >
+                azu.caregiver@gmail.com
+              </a>
+
+              <a
+                href="mailto:azu.caregiver@gmail.com"
+                class="mt-5 inline-flex items-center justify-center bg-[#C96F3D] px-5 py-3 text-xs font-medium tracking-wide text-[#FFFDF8] transition-colors hover:bg-[#2B211C]
+                sm:mt-7 sm:px-6 sm:py-3.5 sm:text-sm"
+              >
+                Écrivez-moi !
+                <span class="ml-3">→</span>
+              </a>
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <!-- Helpful information -->
+        <div
+          class="mt-5 border-y border-[#E7D6C7]
+          sm:mt-6"
+        >
+          <div class="grid md:grid-cols-3">
+
+            <!-- Area -->
+            <div
+              class="border-b border-[#E7D6C7] px-5 py-6
+              sm:px-6 sm:py-8
+              md:border-b-0 md:border-r"
+            >
+              <p
+                class="text-[10px] font-medium uppercase tracking-[0.2em] text-[#C96F3D]"
+              >
+                Localisation
+              </p>
+
+              <p
+                class="mt-2 font-serif text-xl text-[#2B211C]
+                sm:mt-3 sm:text-2xl"
+              >
+                Tokyo · Kanagawa
+              </p>
+            </div>
+
+
+            <!-- Languages -->
+            <div
+              class="border-b border-[#E7D6C7] px-5 py-6
+              sm:px-6 sm:py-8
+              md:border-b-0 md:border-r"
+            >
+              <p
+                class="text-[10px] font-medium uppercase tracking-[0.2em] text-[#C96F3D]"
+              >
+                Langues
+              </p>
+
+              <p
+                class="mt-2 font-serif text-xl leading-8 text-[#2B211C]
+                sm:mt-3 sm:text-2xl"
+              >
+                Anglais · Français · Japonais
+              </p>
+            </div>
+
+
+            <!-- Pricing -->
+            <div
+              class="px-5 py-6
+              sm:px-6 sm:py-8"
+            >
+              <p
+                class="text-[10px] font-medium uppercase tracking-[0.2em] text-[#C96F3D]"
+              >
+                Tarifs à partir de
+              </p>
+
+              <p
+                class="mt-2 font-serif text-xl text-[#2B211C]
+                sm:mt-3 sm:text-2xl"
+              >
+                ¥4,000
+                <span class="font-sans text-xs text-[#68584D] sm:text-sm">
+                  / heure
+                </span>
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- Before you contact -->
+        <div
+          class="mt-10 border-b border-[#E7D6C7] pb-10
+          sm:mt-12 sm:pb-12
+          md:mt-14 md:pb-14"
+        >
+          <p
+            class="text-[10px] uppercase tracking-[0.22em] text-[#C96F3D]
+            sm:text-xs sm:tracking-[0.25em]"
+          >
+            Vous ne savez pas quelles informations préciser ?
+          </p>
+
+          <p
+            class="mt-3 max-w-2xl text-xs leading-6 text-[#68584D]
+            sm:mt-4 sm:text-sm sm:leading-7"
+          >
+            Aucun soucis ! Indiquez-moi simplement l'âge de votre enfant, vos dates et horaires souhaités, ainsi que ce que vous recherchez. Nous pourrons discuter de tous les détails ensemble.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

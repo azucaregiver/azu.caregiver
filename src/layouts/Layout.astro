@@ -1,0 +1,27 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Azu, your Caregiver",
+  description = "Private childcare in Tokyo & Kanagawa for local families, international residents, and visiting families.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+  </head>
+
+  <body class="bg-[#FFF8E7] text-[#2B211C] antialiased">
+    <slot />
+  </body>
+</html>
